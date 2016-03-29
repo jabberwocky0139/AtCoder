@@ -6,7 +6,7 @@ f2 = open("output.txt", "w")
 N, M = [int(i) for i in f.readline().split()]
 board = [[s for s in list(f.readline().strip())] for j in range(N)]
 
-#"""
+
 # 今(i, j)にいる！時刻t
 def DynamicProgramming(i, j, t):
     f2.write("{},{},{}\n".format(i, j, t))
@@ -33,9 +33,3 @@ def DynamicProgramming(i, j, t):
 print(DynamicProgramming(0, 0, 0))
 
 
-"""
-def rN(n):
-    return n
-
-print(0.99**5)
-"""
